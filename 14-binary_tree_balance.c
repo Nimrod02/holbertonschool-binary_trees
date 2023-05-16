@@ -9,12 +9,11 @@
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	int nodeQuantity = 1;
+	int nodeQ = 1;
 
 	if (!tree)
 		return (0);
-
-	return (balance(nodeQuantity, tree->left) - balance(nodeQuantity, tree->right));
+	return (balance(nodeQ, tree->left) - balance(nodeQ, tree->right));
 }
 
 /**
